@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comptabilité — EcomSolutions</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<div class="app-layout">
+  <div class="main-content" id="mainContent">
+    <div id="topbarContainer"></div>
+    <div class="page-content">
+
+      <div class="tabs" style="margin-bottom:24px;">
+        <button class="tab active" onclick="switchComptaTab('dashboard',this)">📊 Dashboard</button>
+        <button class="tab" onclick="switchComptaTab('transactions',this)">💳 Transactions</button>
+        <button class="tab" onclick="switchComptaTab('invoices',this)">🧾 Factures</button>
+        <button class="tab" onclick="switchComptaTab('reports',this)">📈 Rapports</button>
+      </div>
+
+      <div id="comptaContent"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+<script src="js/auth.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/compta.js"></script>
+</body>
+</html>
